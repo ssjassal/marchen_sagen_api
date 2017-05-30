@@ -1,0 +1,2 @@
+class Storyteller < ApplicationRecord
+end

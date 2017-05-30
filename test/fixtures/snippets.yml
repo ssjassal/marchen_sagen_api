@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  story: one
+  storyteller: one
+  snip: MyString
+
+two:
+  story: two
+  storyteller: two
+  snip: MyString
