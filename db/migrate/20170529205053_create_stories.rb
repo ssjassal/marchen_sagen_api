@@ -4,10 +4,10 @@ class CreateStories < ActiveRecord::Migration[5.0]
       t.string :title
       t.string :category
       t.string :content
-      t.string :authors
+      t.string :author
       t.string :description
-      t.date :date
-
+      t.date :date, default: 'CURRENT_DATE'
+      t.string :img
       t.timestamps
     end
   end

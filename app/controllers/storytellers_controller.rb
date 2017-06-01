@@ -5,7 +5,7 @@ class StorytellersController < ApplicationController
   def index
     @storytellers = Storyteller.all
 
-    render json: @storytellers
+    render json: @storytellers.to_json(include: :stories)
   end
 
   # GET /storytellers/1

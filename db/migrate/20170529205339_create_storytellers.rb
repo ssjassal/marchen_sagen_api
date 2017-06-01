@@ -6,7 +6,7 @@ class CreateStorytellers < ActiveRecord::Migration[5.0]
       t.string :username
       t.string :password
       t.integer :total
-
+      t.string :img
       t.timestamps
     end
   end

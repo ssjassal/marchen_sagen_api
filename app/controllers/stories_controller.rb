@@ -5,12 +5,12 @@ class StoriesController < ApplicationController
   def index
     @stories = Story.all
 
-    render json: @stories
+    render json: @stories.to_json(include: :snippets)
   end
 
   # GET /stories/1
   def show
-    render json: @story
+    render json: @story.to_json(include: [:snippets, :storytellers])
   end
 
   # POST /stories

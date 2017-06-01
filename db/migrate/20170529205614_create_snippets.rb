@@ -4,7 +4,6 @@ class CreateSnippets < ActiveRecord::Migration[5.0]
       t.references :story, foreign_key: true
       t.references :storyteller, foreign_key: true
       t.string :snip
-
       t.timestamps
     end
   end
