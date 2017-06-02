@@ -4,10 +4,7 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-#JSON Web Token
-gem 'jwt'
-#Environment Variables to generate and decode JWT
-gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
+
 # Fake data for seed data
 gem 'faker'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -22,7 +19,10 @@ gem 'puma', '~> 3.0'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-
+#JSON Web Token
+gem 'jwt'
+#Environment Variables to generate and decode JWT
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
