@@ -101,27 +101,37 @@ Storyteller.create([
    {
       name:Faker::Name.name,
       email:Faker::Internet.email,
-      img:Faker::LoremPixel.image
+      img:Faker::LoremPixel.image,
+      username:Faker::Hobbit.character,
+      password:Faker::Internet.password
    },
    {
       name:Faker::Name.name,
       email:Faker::Internet.email,
-      img:Faker::LoremPixel.image
+      img:Faker::LoremPixel.image,
+      username:Faker::Hobbit.character,
+      password:Faker::Internet.password
    },
    {
       name:Faker::Name.name,
       email:Faker::Internet.email,
-      img:Faker::LoremPixel.image
+      img:Faker::LoremPixel.image,
+      username:Faker::Hobbit.character,
+      password:Faker::Internet.password
    },
    {
       name:Faker::Name.name,
       email:Faker::Internet.email,
-      img:Faker::LoremPixel.image
+      img:Faker::LoremPixel.image,
+      username:Faker::Hobbit.character,
+      password:Faker::Internet.password
    },
    {
       name:Faker::Name.name,
       email:Faker::Internet.email,
-      img:Faker::LoremPixel.image
+      img:Faker::LoremPixel.image,
+      username:Faker::Hobbit.character,
+      password:Faker::Internet.password
    }
 ])
 Snippet.create([
