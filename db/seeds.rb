@@ -102,35 +102,35 @@ Storyteller.create([
       name:Faker::Name.name,
       email:Faker::Internet.email,
       img:Faker::LoremPixel.image,
-      username:Faker::Hobbit.character,
+      username:FFaker::DragonBall.character,
       password:Faker::Internet.password
    },
    {
       name:Faker::Name.name,
       email:Faker::Internet.email,
       img:Faker::LoremPixel.image,
-      username:Faker::Hobbit.character,
+      username:Faker::DragonBall.character,
       password:Faker::Internet.password
    },
    {
       name:Faker::Name.name,
       email:Faker::Internet.email,
       img:Faker::LoremPixel.image,
-      username:Faker::Hobbit.character,
+      username:Faker::DragonBall.character,
       password:Faker::Internet.password
    },
    {
       name:Faker::Name.name,
       email:Faker::Internet.email,
       img:Faker::LoremPixel.image,
-      username:Faker::Hobbit.character,
+      username:Faker::DragonBall.character,
       password:Faker::Internet.password
    },
    {
       name:Faker::Name.name,
       email:Faker::Internet.email,
       img:Faker::LoremPixel.image,
-      username:Faker::Hobbit.character,
+      username:Faker::DragonBall.character,
       password:Faker::Internet.password
    }
 ])
