@@ -102,7 +102,7 @@ Storyteller.create([
       name:Faker::Name.name,
       email:Faker::Internet.email,
       img:Faker::LoremPixel.image,
-      username:FFaker::DragonBall.character,
+      username:Faker::DragonBall.character,
       password:Faker::Internet.password
    },
    {
