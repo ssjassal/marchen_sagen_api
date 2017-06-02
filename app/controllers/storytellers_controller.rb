@@ -41,14 +41,15 @@ class StorytellersController < ApplicationController
   end
 
   def login
+   #  byebug
     storyteller = Storyteller.find_by(username: params[:storyteller][:username])
-    if user && user.authenticate(params[:storyteller][:password])
+    if storyteller && storyteller.authenticate(params[:storyteller][:password])
       token = create_token(storyteller.id, storyteller.username)
       render json: {status: 200, token: token, storyteller: storyteller}
     else
       render json: {status: 401, message: "Unauthorized"}
+    end
   end
-end
 
 
   private
@@ -76,5 +77,5 @@ end
          username: username
         }
       }
-   end
+    end
 end

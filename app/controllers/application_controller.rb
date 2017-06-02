@@ -1,4 +1,8 @@
 class ApplicationController < ActionController::API
+   require 'jwt'
+   require 'dotenv-rails'
+   require 'bcrypt'
+   
    def authenticate_token
      puts "AUTHENTICATE JWT"
      render json: { status: 401, message: 'Unauthorized' } unless decode_token(bearer_token)
@@ -25,7 +29,7 @@ class ApplicationController < ActionController::API
    def get_current_storyteller
      return if !bearer_token
      decode_jwt = decode_token(bearer_token)
-     Player.find(decode_jwt[0]["storyteller"]["id"])
+     Storyteller.find(decode_jwt[0]["storyteller"]["id"])
    end
 
    def show
