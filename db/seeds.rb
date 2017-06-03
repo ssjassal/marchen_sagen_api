@@ -136,16 +136,6 @@ Storyteller.create([
 ])
 Snippet.create([
    {
-      storyteller_id: 2,
-      story_id: 4,
-      snip: Faker::Lorem.paragraph(2, false, 3)
-   },
-   {
-      storyteller_id: 4,
-      story_id: 2,
-      snip: Faker::Lorem.paragraph(2, false, 5)
-   },
-   {
       storyteller_id: 1,
       story_id: 10,
       snip: Faker::Lorem.paragraph(2, false, 2)
@@ -160,14 +150,5 @@ Snippet.create([
       story_id: 8,
       snip: Faker::Lorem.paragraph(2, false, 10)
    },
-   {
-      storyteller_id: 2,
-      story_id: 4,
-      snip: Faker::Lorem.paragraph(2, false, 8)
-   },
-   {
-      storyteller_id: 3,
-      story_id: 9,
-      snip: Faker::Lorem.paragraph(2, false, 3)
-   }
+
 ])
