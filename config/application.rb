@@ -27,6 +27,6 @@ module MarchenSagenApi
     # Skip views, helpers and assets when generating a new resource.
     config.time_zone = 'Eastern Time (US & Canada)'
     config.api_only = true
-    require "dotenv-rails"
+   #  require "dotenv-rails"
   end
 end

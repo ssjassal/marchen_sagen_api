@@ -1,5 +1,7 @@
 class StoriesController < ApplicationController
   before_action :set_story, only: [:show, :update, :destroy]
+  # before_action :authenticate_token, except: [:index]
+  # before_action :authorize_storyteller, except: [:index]
 
   # GET /stories
   def index
